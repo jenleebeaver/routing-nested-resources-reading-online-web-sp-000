@@ -7,6 +7,7 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
   end
+  #the above is using a conditional to tell us whether we are trying to access a post by a certain author or all posts 
 
   def show
     @post = Post.find(params[:id])
