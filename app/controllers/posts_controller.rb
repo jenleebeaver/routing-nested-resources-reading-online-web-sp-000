@@ -7,7 +7,8 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
   end
-  #the above is using a conditional to tell us whether we are trying to access a post by a certain author or all posts 
+  #the above is using a conditional to tell us whether we are trying to access a post by a certain author or all posts
+  #params[:author_id] comes from our nested routes 
 
   def show
     @post = Post.find(params[:id])
