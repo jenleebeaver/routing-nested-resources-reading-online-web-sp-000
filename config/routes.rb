@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # config/routes.rb
 
   get 'authors/:id/posts'
   get 'authors/:id/posts/:post_id'
